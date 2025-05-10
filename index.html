@@ -19,35 +19,41 @@
 </head>
 
 <body>
+    <div class="container">
     <header>
-        <nav>
+        <div class="header__container">
+        
             <a href="./index.html" class="logo-link">
                  <span class="no-hover">WEB</span>
                  <span class="highlight">Studio</span>
             </a> 
-         <ul class="menu">
+        <nav>  
+            <ul class="menu">
                 <li ><a href="./index.html" class="menu-card">Studio</a> </li>
                 <li> <a href="" class="menu-card">Portfolio</a> </li>
                 <li> <a href="" class="menu-card">Contacts</a> </li>
-        </ul>
+            </ul>
         </nav>
+       
         <address class="contact-address">
             <ul class="address-list">
                 <li > <a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a> </li>
                 <li > <a href="tel:+110001111111" class="address-link">+11 (000) 111-11-11 </a> </li>
             </ul>
         </address>
+        </div>
     </header>
-
+                       <!--Секции-->
     <main>
+                    <!--Секция1-->
         <section class="sectionone">
             <h1 class="maintext">Effective Solutions for Your Business</h1>
             <button class="button" type="button">Order Service</button>
         </section>
-
-        <section>
+                    <!--Секция2-->
+        <section class="sectiontwo">
             <h2 class="h_two_section_two">Our Philosophy</h2>
-            <ul>
+            <ul class="items"> 
                 <li>
                     <h3 class="h_three_section_two">Strategy</h3>
                     <p class="paragraf">Our goal is to identify the business problem to walk away with the perfect and creative solution.
@@ -72,39 +78,40 @@
                 </li>
             </ul>
         </section>
-
-        <section class="sectionthree">
+                                    <!--Секция3-->
+        <section class="sectionthree"> 
             <h2 class="h_two_section_three">Our Team</h2>
             <ul class="ul_section_three">
                 <li class="cards">
                     <img src="./images/markguerrero.jpg" alt="Mark Guerrero photo" width="264">
                     <h3 class="h_three_section_three">Mark Guerrero</h3>
-                    <p class="paragraf">Product Designer</p>
+                    <p class="paragraf_">Product Designer</p>
                 </li>
 
                 <li class="cards">
                     <img src="./images/tomford.jpg" alt="Tom Ford photo" width="264">
                     <h3 class="h_three_section_three">Tom Ford</h3>
-                    <p class="paragraf">Frontend Developer</p>
+                    <p class="paragraf_">Frontend Developer</p>
                 </li>
 
                 <li class="cards">
                     <img src="./images/camilagarcia.jpg" alt="Camila Garcia" width="264">
                     <h3 class="h_three_section_three">Camila Garcia</h3>
-                    <p class="paragraf">Marketing</p>
+                    <p class="paragraf_">Marketing</p>
                 </li>
 
                 <li class="cards">
                     <img src="./images/danielwilson.jpg" alt="Daniel Wilson photo" width="264">
                     <h3 class="h_three_section_three">Daniel Wilson</h3>
-                    <p class="paragraf">UI Designer</p>
+                    <p class="paragraf_">UI Designer</p>
                 </li>
             </ul>
         </section>
-
-        <section>
-            <h2 class="h_two_section_three">Our Portfolio</h2>
+                                        <!--Секция4-->
+        <section class="lastsection"> 
+            <h2 class="h_two_section_three_last">Our Portfolio</h2>
              <ul>
+                <div class="our_portfolio_container">
                 <li> 
                     <img src="./images/bankapp.jpg" alt="Banking App" width="360">
                     <h3 class="h_three_section_two">Banking App</h3>
@@ -140,10 +147,12 @@
                     <h3 class="h_three_section_two">Online Courses</h3>
                     <p class="paragraf">Marketing</p>
                 </li>
-
+            </div>
              </ul>
         </section>
     </main>
+
+
 
     <footer class="footer">
         <a href="./index.html" class="logo_linkblue">
@@ -152,6 +161,7 @@
         </a>
         <p class="footertext">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
     </footer>
+</div>
 </body>
 
 </html>
