@@ -13,8 +13,7 @@ body {font-family: "Roboto", sans-serif;
     max-width: 100%;
     width: 1440px;
     height: 3300px;
-    padding-left: 1px;
-    padding-right: 1px;
+    padding: 0 15px 0 15px;
     margin-left: 1px;
     margin-right: 1px;
     background-color: #FFFFFF;
@@ -22,7 +21,7 @@ body {font-family: "Roboto", sans-serif;
 }
 main {flex-grow: 1;}
                   /* Хедер контейнер */
-.header__container {
+.page-header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -299,9 +298,12 @@ main {flex-grow: 1;}
 
         /* FOOTER  */
 
-.footer {background-color: #2e2f42;
-    flex-direction: column;}
+.page-footer {
     display: flex;
+    background-color: #2e2f42;
+    flex-direction: column;
+    padding: 100px 0 100px}
+    
 :root {
     --paragraph-color: #F4F4FD;}
 
