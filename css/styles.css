@@ -7,30 +7,33 @@ body {font-family: "Roboto", sans-serif;
 
              /* Главный контейнер */
 .container {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
+    /*flex-direction: column;*/
+    /*max-width: 100%;*/
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    width: 1440px;
-    height: 3300px;
+    width: 1158px;
     padding: 0 15px 0 15px;
-    margin-left: 1px;
-    margin-right: 1px;
-    background-color: #FFFFFF;
-    border: 0px;
+    margin: 0 auto;
+    background-color: #98d29c;
+    border: 10px;
 }
 main {flex-grow: 1;}
                   /* Хедер контейнер */
 .page-header {
     display: flex;
-    justify-content: flex-start;
+    /*justify-content: flex-start;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /*padding-top: 24px;
+    padding-bottom: 24px;*/
+    padding: 24px 76px 24px 156px;
     width: 1440px;
     background-color: #ffffff;
-    border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc; */
 }        
+.page-nav {
+    display: flex;
+    align-items: center;
+}
                   /* ЛОГОТИП */
         .logo-link 
         {
@@ -67,7 +70,7 @@ main {flex-grow: 1;}
             .logo-link .highlight:hover {color: #404bbf;}
 
                /* Главное меню Хедера */
-        .menu 
+        .page-menu 
         {
             display: flex;
             flex-direction: row;
@@ -76,13 +79,13 @@ main {flex-grow: 1;}
             width: 261px;
             height: 24px;
             gap: 40px;
-            margin: 24px 332px 24px 76px;
             font-family: "Roboto", sans-serif;
             font-weight: 500;
             line-height: 1.5;
             color: #2e2f42;
             letter-spacing: 0.02em;
         }
+        .page-menu:last-child {margin-right: 0px;}
                 
         .menu-card {color: #2e2f42;}
         .menu-card:hover {color: #404bbf;}
@@ -92,6 +95,7 @@ main {flex-grow: 1;}
                  {
                     font-style: normal;
                     font-family: "Roboto", sans-serif;
+                    margin: 24px 50px;
                     font-weight: 400;
                     line-height: 1.5;
                     color: #434455;
@@ -102,6 +106,7 @@ main {flex-grow: 1;}
             flex-direction: row;
             gap: 40px;
         }
+      
         .address-link {color: #434455;}
         .address-link:hover {color: #404bbf;}
         .address-link:focus {color: #404bbf;}
