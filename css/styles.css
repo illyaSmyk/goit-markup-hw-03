@@ -1,59 +1,51 @@
 
 
-body {font-family: "Roboto", sans-serif; 
-    color: #434455;
-    background-color: #ffffff;
-        }
-
-             /* Главный контейнер */
-.container {
-    /*min-height: 100vh;*/
-    /*flex-direction: column;*/
-    /*max-width: 100%;*/
-    display: flex;
-    width: 1158px;
-    padding: 0 15px 0 15px;
-    margin: 0 auto;
-    background-color: #98d29c;
-    border: 10px;
+body {
+font-family: "Roboto", sans-serif; 
+color: #434455;
+background-color: #ee9a9a;
+min-height: 100vh;
+flex-direction: column;
+max-width: 100%;
+width: 1440px;
+height: 3300px;
 }
-main {flex-grow: 1;}
-                  /* Хедер контейнер */
+/* ========HEADER CONTAINER=========== */
 .page-header {
-    display: flex;
-    /*justify-content: flex-start;
-    align-items: center;
-    /*padding-top: 24px;
-    padding-bottom: 24px;*/
-    padding: 24px 76px 24px 156px;
-    width: 1440px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e7e9fc; */
-}        
+display: flex;
+width: 1440px;
+height: 72px;
+background-color: #ffffff;
+border-bottom: 1px solid #e7e9fc;
+}
+.container {
+display: flex;
+width: 1158px;
+padding: 0 15px 0 15px;
+margin: 0 auto;
+background-color: #ffffff;
+border: 0;
+}     
 .page-nav {
     display: flex;
     align-items: center;
+    width: 452px;
 }
                   /* ЛОГОТИП */
-        .logo-link 
-        {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            width: 115px;
-            height: 24px;
-            gap: 0px;
-            margin: 24px 76px 24px 156px;
-            margin-right: 76px;
-            font-family: "Raleway", sans-serif;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: #4d5ae5;
-            text-decoration: none;
+.logo-link {
+    width: 115px;
+    height: 24px;
+    gap: 0px;
+    margin-right: 76px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
+    display: flex;
         }
             a.logo-link {text-decoration: none;}
         
@@ -69,73 +61,58 @@ main {flex-grow: 1;}
                 }
             .logo-link .highlight:hover {color: #404bbf;}
 
-               /* Главное меню Хедера */
-        .page-menu 
-        {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
-            width: 261px;
-            height: 24px;
-            gap: 40px;
-            font-family: "Roboto", sans-serif;
-            font-weight: 500;
-            line-height: 1.5;
-            color: #2e2f42;
-            letter-spacing: 0.02em;
+.page-menu {
+    display: flex;
+    width: 261px;
+    height: 24px;
+    gap: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
         }
-        .page-menu:last-child {margin-right: 0px;}
+.page-menu:last-child {margin-right: 0px;}
                 
-        .menu-card {color: #2e2f42;}
-        .menu-card:hover {color: #404bbf;}
-        .menu-card:focus {color: #404bbf;}
-                
-        .contact-address 
-                 {
-                    font-style: normal;
-                    font-family: "Roboto", sans-serif;
-                    margin: 24px 50px;
-                    font-weight: 400;
-                    line-height: 1.5;
-                    color: #434455;
-                    letter-spacing: 0.02em
-                }
-        .address-list {
-            display:flex;
-            flex-direction: row;
-            gap: 40px;
-        }
-      
-        .address-link {color: #434455;}
-        .address-link:hover {color: #404bbf;}
-        .address-link:focus {color: #404bbf;}
-
-                      /* СЕКЦИИ */
-
-                    /* СЕКЦИЯ 1  */
+.menu-card {color: #2e2f42;}
+.menu-card:hover {color: #404bbf;}
+.menu-card:focus {color: #404bbf;}
+.address-list {
+    display:flex;
+    gap: 40px;
+    margin: 24px 0px 24px 232px;
+}      
+.address-link {color: #434455;}
+.address-link:hover {color: #404bbf;}
+.address-link:focus {color: #404bbf;}
+main {
+    flex-grow: 1;
+}
+                    /*========= СЕКЦИЯ 1=========  */
 .sectionone 
 {
     width: 100%;
-    padding: 188px 420px 48px 420px;
+    padding: 188px 0;
     height: 600px;
     padding-top: 120px;
     padding-bottom: 120px;
     background-color: #2e2f42;
     display: flex;
+}
+.section-one {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
+    background-color: #2e2f42;
 }
 .maintext {
     font-family: "Roboto", sans-serif;
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     color: #ffffff;
-    background-color: #2e2f42;
+    
     text-align: center;
     letter-spacing: 0.02em;
 } 
@@ -143,10 +120,9 @@ main {flex-grow: 1;}
 .button:hover {background-color: #404bbf;}
 .button:focus {background-color: #404bbf;}
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    display: block;
+    min-width: 169px;
+    height: 56px;
     gap: 10px;
     background-color: #4d5ae5;
     font-weight: 500;
