@@ -21,7 +21,7 @@ font-family: "Roboto", sans-serif;
 color: #434455;
 background-color: #ee9a9a;
 }
-/* ========HEADER CONTAINER=========== */
+               /* ========HEADER CONTAINER=========== */
 .page-header {
 display: flex;
 margin: 0 auto;
@@ -43,7 +43,7 @@ display: flex;
 align-items: center;
     width: 452px;
 }
-                  /* ЛОГОТИП */
+/*===============================ЛОГОТИП=============== */
 .logo-link {
     width: 115px;
     height: 24px;
@@ -69,6 +69,8 @@ align-items: center;
                 }
             .logo-link .highlight:hover {color: #404bbf;}
 
+/*==============================PAGE-MENU===============*/
+
 .page-menu {
     display: flex;
     width: 261px;
@@ -82,7 +84,8 @@ align-items: center;
         }
 .page-menu:last-child {margin-right: 0px;}
                 
-.menu-card {color: #2e2f42;}
+.menu-card {color: #2e2f42;
+padding: 24px 0 24px;}
 .menu-card:hover,
 .menu-card:focus {color: #404bbf;}
 .address-list {
@@ -96,7 +99,7 @@ align-items: center;
 main {
     flex-grow: 1;
 }
-                /*========= HERO=========  */
+/*=============================HERO=====================*/
 .hero 
 {
     width: 1440px;
@@ -106,7 +109,7 @@ main {
     background-color: #2e2f42;
     display: flex;
 }
-.hero-main {
+.hero .container {
     display: flex;
     padding: 188px 0;
     margin: auto;
@@ -146,7 +149,7 @@ main {
     border-radius: 4px;
 }
 
-                   /* ========СЕКЦИЯ 2 =========== */
+/* =====================SECTION PHILOSOPHY ==============*/
 .strategy {
     display: flex;
     border: 0px;
@@ -158,37 +161,31 @@ main {
     text-align: center;
     margin-top: 120px;
     margin-bottom: 120px;}
-.strategy-cont  {
+.strategy .container  {
     border: red 5px solid;
     width: 1128px;
     height: 104px;
     }
-.items {display: flex;
-        border: 0px;
-        gap: 24px;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        }
-.ouritem {
-    
-    width: calc((100% - 72px) / 4);}
-       
-/*.items li {
+.items {
     display: flex;
-    flex-basis: calc((100% - 72px) / 4));
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-content: flex-start;
-    gap: 0px;
     border: 0px;
-    overflow: auto;
+    margin: 0;
     padding: 0;
-        }*/
+    align-items: center;
+    gap: 24px;
+        }
 
-.h_two_section_two {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+
     font-family: "Roboto" sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -196,7 +193,8 @@ main {
     color: #2e2f42;
     text-align: center;
     letter-spacing: 0.02em;
-    text-transform: capitalize;}
+    text-transform: capitalize;
+}
 
 .h_three_section_two {
     font-family: "Roboto" sans-serif;
@@ -219,14 +217,15 @@ main {
         padding: 0;
     text-align: left;}
 
-                /* СЕКЦИЯ 3  */
+/*========================TEAM SECTION===================*/
 
-.sectionthree {
+.team-section {
     box-sizing: border-box;
     width: 1440px;
     height: 732px;
     border: 0px;
     padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #f4f4fd;}
 .ul_section_three {  
                     display: flex;
@@ -236,15 +235,16 @@ main {
             }
 .cards { background-color: #FFFFFF; 
     height: 380px;
-    width: 264px;
-    .paragraf_ {text-align: center;}
-}
+    width: 264px;}
+.paragraf_ {text-align: center;}
+.name-vacation {padding: 32px 0;}
+
 
 .h_two_section_three {
     border: 0px;
     width: 170px;
     height: 40px;
-    margin: 0px 639px 72px 639px;
+    margin-bottom: 72px;
     font-family: "Roboto" sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -262,9 +262,10 @@ main {
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        text-align: center;}
+        text-align: center;
+        margin-bottom: 8px; }
 
-                             /* СЕКЦИЯ 4  */
+/* =======================SECTION PORTFOLIO=============*/
 .lastsection {
     box-sizing: border-box;
     border: 0px;
@@ -273,6 +274,7 @@ main {
     margin: 0px 156px 120px 156px;
     padding-top: 0;
 }
+.lastsection .container {display:flex;}
 .h_two_section_three_last {display: flex;
     border: 0px;
     flex-direction: row;
@@ -293,7 +295,7 @@ main {
                         flex-wrap: wrap;
                         gap: 48px 24px;}
 
-        /* FOOTER  */
+/* =======================FOOTER=======================*/
 
 .page-footer {
     display: flex;
