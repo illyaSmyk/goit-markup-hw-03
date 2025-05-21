@@ -1,20 +1,31 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    }
 
+ul,
+ol {list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;}
+
+button {cursor: pointer;}
+img {display: block;}
 
 body {
 font-family: "Roboto", sans-serif; 
 color: #434455;
 background-color: #ee9a9a;
-min-height: 100vh;
-flex-direction: column;
-max-width: 100%;
-width: 1440px;
-height: 3300px;
 }
 /* ========HEADER CONTAINER=========== */
 .page-header {
 display: flex;
+margin: 0 auto;
 width: 1440px;
-height: 72px;
 background-color: #ffffff;
 border-bottom: 1px solid #e7e9fc;
 }
@@ -25,10 +36,11 @@ padding: 0 15px 0 15px;
 margin: 0 auto;
 background-color: #ffffff;
 border: 0;
-}     
+outline: 1px solid red;
+}    
 .page-nav {
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
     width: 452px;
 }
                   /* ЛОГОТИП */
@@ -44,20 +56,16 @@ border: 0;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    text-decoration: none;
     display: flex;
-        }
-            a.logo-link {text-decoration: none;}
-        
+        } 
             .logo-link .highlight {
-                    font-family: "Raleway", sans-serif;
-                    font-weight: 700;
-                    font-size: 18px;
-                    line-height: 1.17;
-                    letter-spacing: 0.03em;
-                    text-transform: uppercase;
-                    color: #2e2f42;
-                    text-decoration: none;
+                font-family: "Raleway", sans-serif;
+                font-size: 18px;
+                line-height: 1.17;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #2e2f42;
+                font-weight: 700;
                 }
             .logo-link .highlight:hover {color: #404bbf;}
 
@@ -75,7 +83,7 @@ border: 0;
 .page-menu:last-child {margin-right: 0px;}
                 
 .menu-card {color: #2e2f42;}
-.menu-card:hover {color: #404bbf;}
+.menu-card:hover,
 .menu-card:focus {color: #404bbf;}
 .address-list {
     display:flex;
@@ -83,24 +91,25 @@ border: 0;
     margin: 24px 0px 24px 232px;
 }      
 .address-link {color: #434455;}
-.address-link:hover {color: #404bbf;}
+.address-link:hover,
 .address-link:focus {color: #404bbf;}
 main {
     flex-grow: 1;
 }
-                    /*========= СЕКЦИЯ 1=========  */
-.sectionone 
+                /*========= HERO=========  */
+.hero 
 {
-    width: 100%;
-    padding: 188px 0;
+    width: 1440px;
     height: 600px;
-    padding-top: 120px;
     padding-bottom: 120px;
+    margin: auto;
     background-color: #2e2f42;
     display: flex;
 }
-.section-one {
+.hero-main {
     display: flex;
+    padding: 188px 0;
+    margin: auto;
     flex-direction: column;
     align-items: center;
     background-color: #2e2f42;
@@ -117,60 +126,66 @@ main {
     letter-spacing: 0.02em;
 } 
 /* Кнопка */
-.button:hover {background-color: #404bbf;}
+.button:hover, 
 .button:focus {background-color: #404bbf;}
-.button {
+.button 
+{
     display: block;
     min-width: 169px;
     height: 56px;
     gap: 10px;
+    margin-top: 48px;
     background-color: #4d5ae5;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    cursor: pointer;
     align-items: center;
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
 }
 
-                   /* СЕКЦИЯ 2  */
-.sectiontwo {
-    box-sizing: border-box;
+                   /* ========СЕКЦИЯ 2 =========== */
+.strategy {
     display: flex;
     border: 0px;
     width: 100%;
-    padding: 0px;
+    padding: 120px 0;
     background-color: #FFFFFF;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 120px;
     margin-bottom: 120px;}
+.strategy-cont  {
+    border: red 5px solid;
+    width: 1128px;
+    height: 104px;
+    }
 .items {display: flex;
         border: 0px;
         gap: 24px;
         margin: 0;
         padding: 0;
         align-items: center;
-        flex-direction: row;
         }
-.items li {
+.ouritem {
+    
+    width: calc((100% - 72px) / 4);}
+       
+/*.items li {
+    display: flex;
+    flex-basis: calc((100% - 72px) / 4));
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     align-content: flex-start;
     gap: 0px;
     border: 0px;
-    width: 320px;
-    height: 104px;
-    box-sizing: border-box;
     overflow: auto;
     padding: 0;
-    display: flex;
-        }
+        }*/
 
 .h_two_section_two {
     display: none;
@@ -185,6 +200,7 @@ main {
 
 .h_three_section_two {
     font-family: "Roboto" sans-serif;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -225,19 +241,19 @@ main {
 }
 
 .h_two_section_three {
-                    display: flex;
-                    border: 0px;
-                    width: 170px;
-                    height: 40px;
-                    margin: 0px 639px 72px 639px;
-                    font-family: "Roboto" sans-serif;
-                    font-weight: 700;
-                    font-size: 36px;
-                    line-height: 1.11;
-                    color: #2e2f42;
-                    text-align: center;
-                    letter-spacing: 0.02em;
-                    text-transform: capitalize;
+    border: 0px;
+    width: 170px;
+    height: 40px;
+    margin: 0px 639px 72px 639px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #2e2f42;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    display: flex;
                 }
 .h_three_section_three {
         font-family: "Roboto" sans-serif;
@@ -312,9 +328,8 @@ a.logo_linkblue {
     text-transform: uppercase;}
 
 .logo_linkblue {
-    box-sizing: border-box;
-    display: flex;
-    margin: 100px 1169px 0px 156px;
+    display: inline-block;
+    margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
