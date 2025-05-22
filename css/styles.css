@@ -292,21 +292,19 @@ background-color: var(--section-bg-color)}
 /* =======================FOOTER=======================*/
 
 .page-footer {
-    background-color: #2e2f42;
-    max-width: 1440px;
-    margin: 0 auto;}
+background-color: #2e2f42;
+max-width: 1440px;
+margin: 0 auto;}
 
 .footer-container 
 {
-display: flex;
-align-items: start;
 max-width: 1158px;
 padding-left: 15px;
 padding-right: 15px;
 padding-top: 100px;
-margin-left: auto;
-margin-right: auto;
-background-color: #2e2f42;}
+padding-left: 156px;
+background-color: #2e2f42;
+}
 
 .logo_linkblue {
 display: inline-block;
