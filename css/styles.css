@@ -189,10 +189,7 @@ gap: 40px;}
     align-items: center;
     gap: 24px;
         }
-.list-item-container {
-    display: flex;
-    gap: 24px;
-    }
+
 .strategy-list-item {
     gap: 24px;
     width: calc((100% - 72px) / 4);
