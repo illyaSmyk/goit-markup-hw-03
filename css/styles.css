@@ -244,7 +244,6 @@ background-color: var(--section-bg-color)}
     font-size: 36px;
     line-height: 1.11;
     color: var(--secondary-text-color);
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
@@ -292,6 +291,7 @@ margin-right: 0;}
     flex-direction: column;
     text-align: start;
     border: 1px solid #e7e9fc;
+    border-top: none;
     padding-bottom: 32;}
 .portfolio-title {
     margin: 0 auto;
@@ -347,7 +347,7 @@ font-size: 18px;
     letter-spacing: 0.02em;
     padding-bottom: 100px;
     padding-top: 17.5px;
-   }
+}
 
 a.logo_linkblue {
     text-decoration: none;
