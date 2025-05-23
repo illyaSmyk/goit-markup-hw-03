@@ -100,6 +100,7 @@ width: 452px;
 
 .page-menu {
     display: flex;
+    gap: 40px;
     width: 261px;
     column-gap: 24px;
     font-weight: 500;
@@ -228,7 +229,8 @@ background-color: var(--section-bg-color)}
 .name-vacation {padding: 32px 0; }
 .cards { background-color: #FFFFFF; 
     height: 380px;
-    width: 264px;}
+    width: 264px;
+    border-radius: 0px 0px 4px 4px;}
 .paragraf_ {text-align: center;}
 .team-title {
     margin-bottom: 72px;
