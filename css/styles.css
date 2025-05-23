@@ -285,6 +285,7 @@ background-color: var(--section-bg-color)}
     padding-bottom: 32;}
 .portfolio-title {
     margin: 0 auto;
+    margin-bottom: 72px;
     text-align: center;
     padding-bottom: 72px;
     font-weight: 700;
@@ -301,7 +302,8 @@ background-color: var(--section-bg-color)}
 .page-footer {
 background-color: #2e2f42;
 max-width: 1440px;
-margin: 0 auto;}
+margin: 0 auto;
+padding: 100px 0; }
 
 .footer-container 
 {
