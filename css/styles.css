@@ -18,9 +18,6 @@ a {
 
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
     list-style-type: none;
     }
 button {cursor: pointer;}
@@ -42,7 +39,6 @@ margin: -1px;
 border: 0;
 padding: 0;
 width: 1px;
-
 white-space: nowrap;
 clip-path: inset(100%);
 clip: rect(0 0 0 0);
@@ -53,8 +49,10 @@ overflow: hidden;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
     text-align: center;
-    text-transform: capitalize;       
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .container {
     max-width: 1158px;
@@ -64,33 +62,29 @@ overflow: hidden;
     margin-right: auto;
     background-color: #ffffff;}
 
-.accent-color {color: var(--primary-accent-color);}
-
-               /* ========HEADER=========== */
+            /* ========HEADER=========== */
 .page-header {
 margin: 0 auto;
-max-width: 1440px;
-background-color: #ffffff;
 border-bottom: 1px solid #e7e9fc;
 }
 .page-header .container {display: flex;}
 .page-nav {
 display: flex;
 align-items: center;
-width: 452px;
 }
 /*===============================ЛОГОТИП=============== */
 .logo-link {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    /*padding-top: 24px;
+    padding-bottom: 24px;*/
+    align-items: center;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin-right: 76px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
     color: #4d5ae5;
 } 
     .logo-link .highlight {color: #2e2f42;}
@@ -100,8 +94,8 @@ width: 452px;
 
 .page-menu {
     display: flex;
-    width: 261px;
-    column-gap: 24px;
+    width: 261px;       /*!!!!!!!!*/
+    /*column-gap: 24px;*/
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -111,15 +105,15 @@ width: 452px;
                 
 .page-menu-item {
 color: var(--secondary-text-color);
-padding: 24px 0 24px;
+/* padding: 24px 0 24px; */
 margin-right: 40px;
 }
 .page-menu-item:last-child {
     margin-right: 0;
 }
 .page-menu-link {
-    padding-top: 24px;
-    padding-bottom: 24px;
+   /* padding-top: 24px;
+    padding-bottom: 24px; */
 }
 .page-menu-link:hover,
 .page-menu-link:focus {color: var(--primary-accent-color);}
@@ -129,7 +123,7 @@ margin-right: 40px;
     gap: 40px;
     margin: 24px 0px 24px 232px;
 }      
-.address-link {color: var(--primary-text-color);}
+
 .address-link:hover,
 .address-link:focus {color: var(--primary-accent-color);}
 
@@ -140,7 +134,7 @@ margin-right: 40px;
     margin-left: auto;
     margin-right: auto;
     background-color: #2e2f42;
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
     padding-top: 188px;
         padding-bottom: 188px;
     color: #ffffff;
@@ -181,7 +175,7 @@ margin-right: 40px;
 .strategy-section {
     width: 1128px;
     background-color: #FFFFFF;
-    margin-bottom: 120px;
+    /*margin-bottom: 120px;*/
     padding: 120px 0;
     color: var(--secondary-text-color);
     margin-left: auto;
@@ -215,11 +209,11 @@ margin-right: 40px;
 /*========================TEAM SECTION===================*/
 
 .team-section {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1440px;
-    padding: 120px 0;
-    background-color:var(--section-bg-color);}
+margin-left: auto;
+margin-right: auto;
+max-width: 1440px;
+padding: 120px 0;
+background-color:var(--section-bg-color);}
 
 .team-section .container {
 display: flex;
@@ -228,29 +222,27 @@ width: 1440px;
 background-color: var(--section-bg-color)}
 
 .ul_section_team {  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 24px;
-            }
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 24px;
+ }
 .name-vacation {padding: 32px 0; }
-.cards { background-color: #FFFFFF; 
-    height: 380px;
-    width: 264px;
-    border-radius: 0px 0px 4px 4px;}
+.cards {
+background-color: #FFFFFF; 
+width: 264px;
+border-radius: 0px 0px 4px 4px;}
 .paragraf_ {text-align: center;}
-.team-title {
+/*.team-title {
     margin-bottom: 72px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 72px;
-    padding-top: 120px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    color: var(--secondary-text-color);
+    
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    text-align: center;*/
+
 }
 .people-name {
         font-weight: 500;
@@ -273,34 +265,31 @@ background-color: var(--section-bg-color)}
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    row-gap: 48px;
     margin: 0;
     padding: 0;
-    
     background-color: var(--body-background-color);}
 
-.portfolio-list li:nth-last-child(-n+3) {
-    margin-bottom: 0;
-}
 .portfolio-list li {
 width: 360px;
 margin-right: 24px;
 margin-bottom: 24px;}
 .portfolio-list li:nth-child(3n) {
 margin-right: 0;}
+.portfolio-list li:nth-last-child(-n+3) {
+margin-bottom: 0;
+}
 
 .portfolio-list-item {
     width: calc((100% - 48px) / 3);}
 
 .name-of-item {
-    display: flex;
     padding: 32px 16px;
     flex-direction: column;
     text-align: start;
     border: 1px solid #e7e9fc;
     border-top: none;
     padding-bottom: 32px;}
-.portfolio-title {
+/*.portfolio-title {
     margin: 0 auto;
     margin-bottom: 72px;
     text-align: center;
@@ -309,7 +298,7 @@ margin-right: 0;}
     line-height: 1.11;
     color: #2e2f42;
     letter-spacing: 0.02em;
-    text-transform: capitalize;}
+    text-transform: capitalize;} */
 .portfolio-subtitle {margin-bottom: 8px;} 
 
 
@@ -339,19 +328,14 @@ font-size: 18px;
 }
 
 .footertext {
-    display: block;
-    max-width: 264px;
+    max-width: 289px;
     color: #ffffff;
     background-color: #2e2f42;
     margin-right: auto;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-bottom: 100px;
-    padding-top: 17.5px;
 }
 
 a.logo_linkblue {
-    text-decoration: none;
+text-decoration: none;
 }
 .white {
     font-family: "Raleway", sans-serif;
@@ -363,5 +347,4 @@ a.logo_linkblue {
     text-transform: uppercase;}
 
 .no-hover {color: inherit; }
-.white:hover {
-    color: #404bbf;}
+.white:hover {color: #404bbf;}
